@@ -86,18 +86,13 @@ public class BlackjackGame {
         return playerHand;
     }
 
-    public boolean isBlackjackOrBust() {
-        return playerHand.isBlackjack() || playerHand.isBust()
-                || dealerHand.isBlackjack() || dealerHand.isBust();
-    }
-
     public boolean isPush() {
         return playerHand.getPoints() <= 21 && playerHand.getPoints() == dealerHand.getPoints();
     }
 
     public boolean playerWins() {
         return playerHand.isBlackjack()
-                || playerHand.getPoints() > dealerHand.getPoints() && playerHand.getPoints() < 21
+                || playerHand.getPoints() > dealerHand.getPoints() && playerHand.getPoints() <= 21
                 || dealerHand.isBust() && playerHand.getPoints() <= 21;
     }
 

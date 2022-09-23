@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Deck {
 
-    private Card[] deck;
+    private final Card[] deck;
     private int currentCardIndex;
 
     public Deck (){
@@ -23,6 +23,8 @@ public class Deck {
         }
         shuffleDeck();
     }
+
+
 
 
     private void shuffleDeck() {

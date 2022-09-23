@@ -4,7 +4,7 @@ public class Hand {
     private ArrayList<Card> hand;
     private String user;
 
-//    private static int counter = 0;
+
 
     public Hand(String user) {
         this.user = user;

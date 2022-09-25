@@ -26,7 +26,7 @@ public class Card {
     }
 
     public boolean isAce() {
-        return value.equalsIgnoreCase("ace");
+        return color.equalsIgnoreCase("a");
     }
 
     public String display(){

@@ -1,4 +1,4 @@
-# BlackJackGame
+# BlackjackGame
 Blackjack Game
 
 A simple blackjack game!
